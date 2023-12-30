@@ -15,8 +15,10 @@ import {app} from './app.js';
 })
  
  
-app.get('/api/user', (req, res) => {
-   res.send('Hello World!')
+app.use('/api/user', (req, res) => {
+   return res.status(200).json({
+      message:"hello!!!!!!!"
+   })
  })
  /*const app = express ();
  ( async () => {
