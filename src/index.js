@@ -15,7 +15,7 @@ import {app} from './app.js'
 })
  
  
-app.get('/', (req, res) => {
+app.get('/api/user', (req, res) => {
    res.send('Hello World!')
  })
  /*const app = express ();
